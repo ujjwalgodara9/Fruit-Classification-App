@@ -22,4 +22,4 @@ Ujjwal Godara, IIIT Delhi Student, Mobile Computing Course 2024
 ## Installation
 1. Clone the repository:
    
-   git clone https://github.com/ujjwal-godara/fruit-classification-app.git
+   git clone https://github.com/ujjwalgodara9/Fruit-Classification-App
