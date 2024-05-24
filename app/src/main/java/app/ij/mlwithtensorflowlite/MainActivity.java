@@ -1,8 +1,3 @@
-/*
- * Created by ishaanjav
- * github.com/ishaanjav
- */
-
 package app.ij.mlwithtensorflowlite;
 
 import androidx.annotation.Nullable;
@@ -109,8 +104,13 @@ public class MainActivity extends AppCompatActivity {
                     maxPos = i;
                 }
             }
-            String[] classes = {"Apple", "Banana", "Orange"};
-            result.setText(classes[maxPos]);
+            if (maxConfidence<2){
+                result.setText("Other");
+            }else{
+                String[] classes = {"Apple", "Banana", "Orange"};
+                result.setText(classes[maxPos]);
+            }
+
 
             // Releases model resources if no longer used.
             model.close();
